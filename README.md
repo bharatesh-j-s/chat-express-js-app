@@ -15,3 +15,5 @@ Chat functionalities: Send and receive messages, Beep sound on new message recei
 The code should be published in GitHub, along with screenshots.
 If possible upload a video of working of the app either in youtube or google drive, and the shareable link to the readme file of the project.
 
+![Alt text](/public/images/chat.png?raw=true "Chat")
+
