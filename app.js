@@ -90,6 +90,7 @@ io.sockets.on('connection', function(socket){
 
 	//Send Message
 	socket.on('send message', function(message, from, to){
+		process.stderr.write('\u0007');
 		io.sockets.emit('new message', {message:message,from:from,to:to});
 	});
 });
