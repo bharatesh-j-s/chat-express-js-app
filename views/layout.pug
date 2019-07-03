@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description', content='')
+		meta(name='author', content='Mark Otto, Jacob Thornton, and Bootstrap contributors')
+		meta(name='generator', content='Jekyll v3.8.5')
+		title CHATING APP
+		link(rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css")
+		link(rel="stylesheet" href="/css/style.css")
+	body.d-flex.flex-column.h-100
+		header
+			// Fixed navbar
+			nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+				a.navbar-brand(href='/') CHATING APP
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+				#navbarCollapse.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item.active
+							a.nav-link(href='/') Home
+					form.form-inline.mt-2.mt-md-0
+						if !session
+							a.btn.btn-outline-success.mr-sm-2.my-2.my-sm-0(href='/auth/login') Login
+							a.btn.btn-outline-success.mr-sm-2.my-2.my-sm-0(href='/auth/register') Register
+						if session
+							a.navbar-brand(href='#') #{session.name}
+							a.btn.btn-outline-success.my-2.my-sm-0(href='/auth/logout') Logout
+
+		main.flex-shrink-0(role='main')
+			.container
+				if message!=''
+					div(class="alert alert-success")= message
+				if errors 
+					div(class="alert alert-danger")
+						each error, i in errors
+							li= error.msg
+
+				block content
+
+		script(src="/jquery/dist/jquery.js")
+		script(src="/bootstrap/dist/js/bootstrap.js")

@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	.row.mt-5.justify-content-center
+		.col-12
+			.card
+				.card-header #{title}
+				.card-body
+					form(method="POST", action="/auth/register", autocomplete="off")
+						.form-group
+							input#name.form-control(type='text', name="name", placeholder='Name')
+
+						.form-group
+							input#name.form-control(type='text', name="mobile", placeholder='Mobile No')
+
+						.form-group
+							input#email.form-control(type='email', name="email", placeholder='Email')
+
+						.form-group
+							input#name.form-control(type='text', name="username", placeholder='Username')
+
+						.form-group
+							input#password.form-control(type='password', name="password", placeholder='Password')
+
+						.form-group
+						button.btn.btn-primary.btn-block(type='submit') Register
+

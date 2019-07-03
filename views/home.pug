@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	.row.mt-5
+		.col-12
+			.list-group
+				a.list-group-item.list-group-item-action.active(href='#') Users
+				each user, i in users
+					if(session.name != user.name)
+						a.list-group-item.list-group-item-action(href='/chat?from=' + session.username + '&to=' + user.username) #{user.name}
