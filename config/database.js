@@ -1,4 +1,4 @@
 module.exports = {
-	database:'mongodb://localhost:27017/demo',
+	database:'mongodb://localhost:27017/chat',
 	secret: 'pass'
 }

@@ -1,5 +1,3 @@
-# chat
-
 # Assignment for the position: 
 Sr. Software engineer at Mounty Outdoor Adventures Pvt. Ltd.
 
@@ -15,5 +13,18 @@ Chat functionalities: Send and receive messages, Beep sound on new message recei
 The code should be published in GitHub, along with screenshots.
 If possible upload a video of working of the app either in youtube or google drive, and the shareable link to the readme file of the project.
 
+# Screenshots
+1. Login
+![Alt text](/public/images/login.png?raw=true "Login")
+![Alt text](/public/images/login1.png?raw=true "Login")
+
+2. Register
+![Alt text](/public/images/register.png?raw=true "Register")
+
+3. Home
+![Alt text](/public/images/home.png?raw=true "Home")
+
+4. Chat
 ![Alt text](/public/images/chat.png?raw=true "Chat")
+![Alt text](/public/images/chat1.png?raw=true "Chat")
 
